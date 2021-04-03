@@ -29,6 +29,27 @@ android_app_import {
 	privileged: true,
 }
 
+android_app_import {
+	name: "SoterService",
+	owner: "realme",
+	apk: "proprietary/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "TeeService",
+	owner: "realme",
+	apk: "proprietary/priv-app/TeeService/TeeService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
 dex_import {
 	name: "mediatek-common",
 	owner: "realme",
